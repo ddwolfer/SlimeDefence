@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d71f431-1bad-4ee9-a28e-654dbe44bbdd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "System",
+    "path": "folders/Sprites/System.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCreate_Slime_ButtonButton",

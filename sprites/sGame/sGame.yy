@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eb9fd8dc-e84b-49f9-98a7-c5db2235d6c7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "System",
+    "path": "folders/Sprites/System.yy",
   },
   "resourceVersion": "1.0",
   "name": "sGame",

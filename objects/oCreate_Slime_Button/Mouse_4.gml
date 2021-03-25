@@ -3,13 +3,13 @@
 if(oGame.Money >= 10){
 	oGame.Money = oGame.Money-10
 
-	RandomX = random(camera_get_view_width(view_camera[0]))
-	RandomY = random(camera_get_view_height(view_camera[0]))
+	RandomX = irandom_range(camera_get_view_x(view_camera[0])+20,camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])-112)
+	RandomY = irandom_range(camera_get_view_y(view_camera[0])+20,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])-20)
 
 	var Slimes = instance_create_layer(RandomX,RandomY,"SlimeInstances",oSlime)
 	
 	with(Slimes){
-		Slimes.image_xscale = 1.5
-		Slimes.image_yscale = 1.5
+		Slimes.image_xscale = SlimeSize
+		Slimes.image_yscale = SlimeSize
 	}
 }
