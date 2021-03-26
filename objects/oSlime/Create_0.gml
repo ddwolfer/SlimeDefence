@@ -27,8 +27,24 @@ targetY = y
 targetDeviation = 3
 moveSpeed = 3
 
-SlimeSize = oCreate_Slime_Button.SlimeSize
+SlimeSize = oCreateSlimeButton.SlimeSize
 
 AttackRange = 120
 AttackCooldown = true
 AttackSpeed = room_speed*0.5
+
+#region //shader
+Color = function(r, g, b)constructor{
+	red = r;
+	green = g;
+	blue = b;
+	
+	static toShaderValue = function(value){
+		return value / 255;
+	}
+};
+
+SlimeColorReplace = new Color(color_get_red(Player_Slime_color),color_get_green(Player_Slime_color),color_get_blue(Player_Slime_color))
+sh_handle_range = shader_get_uniform(sh_ReplaceSlimeColor,"range")
+sh_handle_replace = shader_get_uniform(sh_ReplaceSlimeColor,"colorReplace")
+#endregion

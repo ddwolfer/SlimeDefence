@@ -14,5 +14,5 @@ Color = function(r, g, b)constructor{
 
 ColorReplace = new Color(157,208,145)
 
-sh_handle_range = shader_get_uniform(sh_ReplaceColor,"range")
-sh_handle_replace = shader_get_uniform(sh_ReplaceColor,"colorReplace")
+sh_handle_range = shader_get_uniform(sh_ReplaceSlimeColor,"range")
+sh_handle_replace = shader_get_uniform(sh_ReplaceSlimeColor,"colorReplace")

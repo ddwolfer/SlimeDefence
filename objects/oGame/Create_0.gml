@@ -20,3 +20,6 @@ Font=font_add("NotoSansMonoCJKtcBold.otf",10*resizeRatio,0 ,0 ,0 ,65535)
 rangeFindFlag = false
 rangeFindStartX = 0
 rangeFindStartY = 0
+
+globalvar Player_Slime_color;
+Player_Slime_color = make_color_rgb(157,208,145)

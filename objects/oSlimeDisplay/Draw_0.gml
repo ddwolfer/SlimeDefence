@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-shader_set(sh_ReplaceColor)
+shader_set(sh_ReplaceSlimeColor)
 
 shader_set_uniform_f(sh_handle_range,10)
 

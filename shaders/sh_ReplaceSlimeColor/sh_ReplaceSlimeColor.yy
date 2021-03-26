@@ -1,11 +1,11 @@
 {
   "type": 1,
   "parent": {
-    "name": "Palette Swap",
-    "path": "folders/Shaders/Palette Swap.yy",
+    "name": "Shaders",
+    "path": "folders/Shaders.yy",
   },
   "resourceVersion": "1.0",
-  "name": "shd_pal_swapper",
+  "name": "sh_ReplaceSlimeColor",
   "tags": [],
   "resourceType": "GMShader",
 }

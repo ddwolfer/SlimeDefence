@@ -29,4 +29,14 @@ if(Create_finish){
 		draw_set_alpha(1)
 	}
 }
+
+shader_set(sh_ReplaceSlimeColor)
+shader_set_uniform_f(sh_handle_range,10)
+shader_set_uniform_f(sh_handle_replace,
+	SlimeColorReplace.toShaderValue(SlimeColorReplace.red),
+	SlimeColorReplace.toShaderValue(SlimeColorReplace.green),
+	SlimeColorReplace.toShaderValue(SlimeColorReplace.blue)
+)
+
 draw_self()
+shader_reset()
