@@ -13,3 +13,4 @@ shader_set_uniform_f(sh_handle_replace,
 
 draw_self()
 shader_reset()
+

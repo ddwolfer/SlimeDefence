@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"12aeb718-9dfa-4ac6-b701-d63dd6dbdc8d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "System",
-    "path": "folders/Sprites/System.yy",
+    "name": "Palette",
+    "path": "folders/Sprites/Palette.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPalette",

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8ea35703-9f69-43a9-a780-27289f8babe4","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ea35703-9f69-43a9-a780-27289f8babe4","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},"LayerId":{"name":"3d71f431-1bad-4ee9-a28e-654dbe44bbdd","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sCreate_Slime_ButtonButton","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},"resourceVersion":"1.0","name":"8ea35703-9f69-43a9-a780-27289f8babe4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8ea35703-9f69-43a9-a780-27289f8babe4","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8ea35703-9f69-43a9-a780-27289f8babe4","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},"LayerId":{"name":"3d71f431-1bad-4ee9-a28e-654dbe44bbdd","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sSummonSlimeButtonButton","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},"resourceVersion":"1.0","name":"8ea35703-9f69-43a9-a780-27289f8babe4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sCreate_Slime_ButtonButton","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},
+    "spriteId": {"name":"sSummonSlimeButtonButton","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4ea2fde9-885b-4af2-9a1e-4f38eb718b77","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ea35703-9f69-43a9-a780-27289f8babe4","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4ea2fde9-885b-4af2-9a1e-4f38eb718b77","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ea35703-9f69-43a9-a780-27289f8babe4","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sCreate_Slime_ButtonButton","path":"sprites/sCreate_Slime_ButtonButton/sCreate_Slime_ButtonButton.yy",},
+    "parent": {"name":"sSummonSlimeButtonButton","path":"sprites/sSummonSlimeButtonButton/sSummonSlimeButtonButton.yy",},
     "resourceVersion": "1.3",
-    "name": "sCreate_Slime_ButtonButton",
+    "name": "sSummonSlimeButtonButton",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d71f431-1bad-4ee9-a28e-654dbe44bbdd","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "System",
     "path": "folders/Sprites/System.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sCreate_Slime_ButtonButton",
+  "name": "sSummonSlimeButtonButton",
   "tags": [],
   "resourceType": "GMSprite",
 }

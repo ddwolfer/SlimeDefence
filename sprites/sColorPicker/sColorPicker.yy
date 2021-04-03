@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fca3af9b-4d32-492e-b395-50a7af9d284e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "System",
-    "path": "folders/Sprites/System.yy",
+    "name": "Palette",
+    "path": "folders/Sprites/Palette.yy",
   },
   "resourceVersion": "1.0",
   "name": "sColorPicker",
