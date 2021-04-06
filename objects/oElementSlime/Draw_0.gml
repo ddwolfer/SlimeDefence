@@ -7,11 +7,11 @@ if(FusionFlag){
 	
 	if(collision_point(mouse_x, mouse_y,oSlime,false,true)){
 		var fusionTargetTemp = instance_nearest(mouse_x, mouse_y,oSlime) 
-		draw_sprite_ext(sSelectSlimeCursor,0,fusionTargetTemp.x,fusionTargetTemp.y-(fusionTargetTemp.sprite_height/5),1,1,mb_leftPressCount%90,-1,1)
-		FusionTarget = fusionTargetTemp
+		draw_sprite_ext(sSelectSlimeCursor,0,fusionTargetTemp.x,fusionTargetTemp.y-(fusionTargetTemp.sprite_height/5),fusionTargetTemp.SlimeSize,fusionTargetTemp.SlimeSize,mb_leftPressCount%90,-1,1)
+		FusionTargetTemp = fusionTargetTemp
 		gotoFusion = true
 	}else{
-		FusionTarget = 0
+		FusionTargetTemp = 0
 		gotoFusion = false
 	}
 }

@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"oColorResetButton","path":"objects/oColorResetButton/oColorResetButton.yy",},"order":2,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":0,},
+    {"id":{"name":"sEmpty","path":"sprites/sEmpty/sEmpty.yy",},"order":13,},
     {"id":{"name":"sShowChoice","path":"sprites/sShowChoice/sShowChoice.yy",},"order":5,},
     {"id":{"name":"sMoney","path":"sprites/sMoney/sMoney.yy",},"order":2,},
     {"id":{"name":"sGame","path":"sprites/sGame/sGame.yy",},"order":1,},
@@ -23,6 +24,7 @@
     {"id":{"name":"sColorValue","path":"sprites/sColorValue/sColorValue.yy",},"order":2,},
     {"id":{"name":"sDottedLine","path":"sprites/sDottedLine/sDottedLine.yy",},"order":0,},
     {"id":{"name":"oSlimeParent","path":"objects/oSlimeParent/oSlimeParent.yy",},"order":3,},
+    {"id":{"name":"sSlime_fusion","path":"sprites/sSlime_fusion/sSlime_fusion.yy",},"order":6,},
     {"id":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},"order":1,},
     {"id":{"name":"sShowSpriteButton","path":"sprites/sShowSpriteButton/sShowSpriteButton.yy",},"order":6,},
     {"id":{"name":"shOutline","path":"shaders/shOutline/shOutline.yy",},"order":0,},

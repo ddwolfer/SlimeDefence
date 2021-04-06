@@ -9,7 +9,8 @@ if(oGame.Money >= 10){
 	var Slimes = instance_create_layer(RandomX,RandomY,"SlimeInstances",oSlime)
 	
 	with(Slimes){
-		Slimes.image_xscale = SlimeSize
-		Slimes.image_yscale = SlimeSize
+		image_xscale = SlimeSize
+		image_yscale = SlimeSize
+		SlimeSize = 1.0
 	}
 }

@@ -10,4 +10,5 @@ var Slimes = instance_create_layer(RandomX,RandomY,"SlimeInstances",oElementSlim
 with(Slimes){
 	Slimes.image_xscale = SlimeSize
 	Slimes.image_yscale = SlimeSize
+	Slimes.SlimeSize = 1.0
 }

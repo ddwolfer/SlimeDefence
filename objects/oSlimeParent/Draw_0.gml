@@ -43,6 +43,8 @@ shader_set_uniform_f(sh_handle_replace,
 	SlimeColorReplace.toShaderValue(SlimeColorReplace.green),
 	SlimeColorReplace.toShaderValue(SlimeColorReplace.blue)
 )
+if( State!=State.deleteing ){
+	draw_self()
+}
 
-draw_self()
 shader_reset()

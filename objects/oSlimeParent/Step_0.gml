@@ -2,18 +2,47 @@
 // You can write your code in this editor
 getInput()
 
+
+
+ActivateRangeX = 10 * SlimeSize
+ActivateRangeY = 12 * SlimeSize
 depth = -y
 
 if(Create_finish){
+	#region 攻擊
+	if(AttackEnable){
+		var EnemyFind = collision_circle(x,y,AttackRange,oEnemy,0,1)
+		if(EnemyFind > 0 and AttackCooldown and State==State.idle){
+	
+			var EnemyTarget = instance_nearest(x,y,oEnemy)
+	
+			AttackCooldown = false
+			show_debug_message("[oSlime Step]找到目標攻擊 敵人為:" + string(EnemyTarget))
+	
+			var SlimeAttack = instance_create_layer(x,y-6,"Instances",oBullet)
+			with(SlimeAttack){
+				SlimeAttack.TargetEnemyID = EnemyTarget
+				SlimeAttack.image_xscale = 0.5
+				SlimeAttack.image_yscale = 0.5
+			}
+			alarm[2] = AttackSpeed
+		}
+	}
+	#endregion
 	
 	#region //抵達目的地
 	if( (abs(targetX - x)<targetDeviation) and (abs(targetY - y)<targetDeviation) ){
-		targetX = x
-		targetY = y
-		FusionTarget = 0
+		targetX = -100
+		targetY = -100
+		FusionTargetTemp = 0
 		State = State.idle
+		ShowMovePath = true
 	}
 	#endregion
+	
+	if(FusionFalg){
+		State = State.fusion
+	}
 	
 	#region //左鍵點擊觸發用
 	if(not Activate){
@@ -33,7 +62,7 @@ if(Create_finish){
 		targetDeviation = (oGame.Slime_ActivateCount*3.5)
 		
 		#region //右鍵移動
-		if( mouse_check_button(mb_right)){
+		if( mouse_check_button(mb_right) && State != State.fusion){
 			if(abs(mouse_x - x)>2){
 				show_debug_message("[oSlime Step]我的ID : "+string(id)+"移動目的地:"+string(mouse_x)+","+string(mouse_y)+"| 目前位置:"+string(x)+","+string(y))
 				targetX = mouse_x
@@ -83,7 +112,27 @@ if(Create_finish){
 			break
 			
 		case State.create:
-			sprite_index=sSlime_create
+			sprite_index = sSlime_create
+			break
+			
+		case State.fusion:
+			sprite_index = sSlime_fusion
+			
+			if( floor(image_index) == image_number-1 ){
+				 x = -100
+				 y = -100
+				 Activate = false
+				 FusionFalg = false
+				 State = State.deleteing
+				  alarm[0] = room_speed * 3
+			}
+			
+			break
+		
+		case State.deleteing:
+			x = -100
+			y = -100
+			sprite_index = sEmpty
 			break
 	}
 }else{

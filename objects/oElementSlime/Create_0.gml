@@ -12,3 +12,8 @@ gotoFusion = false
 
 
 mb_leftPressCount = 0
+
+NewSlimeX=0
+NewSlimeY=0
+
+AttackEnable = false
